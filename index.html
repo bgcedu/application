@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discount Lead Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <form action="https://formspree.io/f/mowwdzbk" method="POST">
+      <div class="logo-container">
+    <img src="images/logo.png" alt="Company Logo">
+    </div>
+    <h2>Fill out this form to get your discount and have the course setup fee waived!</h2>
+
+    <label>Type Your Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Your Email Address:</label>
+    <input type="email" name="email" required>
+
+    <label>Your Phone Number:</label>
+    <input type="tel" name="phone" pattern="[0-9]{10,15}" placeholder="Enter a valid phone number" required>
+
+    <label>Type the Course Name:</label>
+    <input type="text" name="course" placeholder="Ex: HND Business Management" required>
+
+    <label>Your Education Qualification:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="qualification" value="O/L"> G.C.E O/L</label><br>
+      <label><input type="checkbox" name="qualification" value="A/L"> G.C.E A/L</label><br>
+      <label><input type="checkbox" name="qualification" value="Diploma"> Diploma</label><br>
+      <label><input type="checkbox" name="qualification" value="Higher Studies"> Higher Diploma or Degree</label>
+    </div>
+
+    <label>Are you employed?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="employed" value="Yes" required> Yes</label><br>
+      <label><input type="radio" name="employed" value="No"> No</label>
+    </div>
+
+    <label>Working Experience:</label>
+    <select name="experience" required>
+      <option value="0">0</option>
+      <option value="6 Months">6 Months</option>
+      <option value="1 Year">1 Year</option>
+      <option value="2 Years">2 Years</option>
+      <option value="More than 2 Years">More than 2 Years</option>
+      <option value="3 Years">3 Years</option>
+      <option value="More than 3 Years">More than 3 Years</option>
+      <option value="5 Years">5 Years</option>
+      <option value="More than 5 Years">More than 5 Years</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
